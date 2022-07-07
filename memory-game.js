@@ -21,7 +21,7 @@ const colors = shuffle(COLORS);
 const gameBoard = document.getElementById("game");
 let scoreDisplay = document.querySelector(".scoreDisplay");
 let bestScoreDisplay = document.querySelector(".bestScore");
-
+let currentCards = [];
 let score = 0;
 let bestScore = 0;
 
@@ -40,7 +40,6 @@ function start() {
   document.querySelector(".title").innerText = "MEMORY GAME";
 }
 
-let currentCards = [];
 /** Shuffle array items in-place and return shuffled array. */
 
 function shuffle(items) {
